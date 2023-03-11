@@ -2,5 +2,5 @@
 
 Rails.application.routes.draw do
   get 'messages/random_greeting', to: 'messages#random_greeting'
-  root 'static_pages#index'
+  root 'messages#random_greeting'
 end
