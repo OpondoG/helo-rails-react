@@ -1,0 +1,17 @@
+<div id="root"></div>
+
+<script>
+  const getGreeting = async () => {
+    const response = await fetch('/messages/random_greeting');
+    const data = await response.json();
+    return data.greeting;
+  }
+
+  const renderGreeting = async () => {
+    const greeting = await getGreeting();
+    const root = document.getElementById('root');
+    root.innerHTML = `<h1>${greeting}</h1>`;
+  }
+
+  renderGreeting();
+</script>

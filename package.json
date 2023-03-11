@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "private": "true",
+  "dependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@hotwired/stimulus": "^3.2.1",
+    "@hotwired/turbo-rails": "^7.3.0",
+    "babel-loader": "^9.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "stylelint": "stylelint \"**/*.{css,scss}\""
+  },
+  "devDependencies": {
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
