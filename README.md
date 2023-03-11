@@ -135,8 +135,6 @@ If you have made a migration then run this command
 rails db:migrate
 ```
 ```
-rails db:seed
-```
 ### Usage
 
 To run the project, execute the following command:
